@@ -9,7 +9,7 @@ import Services from './Services';
 
 const Home = () => {
     return (
-        <div className='my-28'>
+        <div className='my-28 px-12'>
             <Banner></Banner>
             <Info ></Info>
             <Services></Services>

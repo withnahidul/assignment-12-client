@@ -1,8 +1,10 @@
 import React from 'react';
-import fluoride from '../../assets/images/fluoride.png';
-import cavity from '../../assets/images/cavity.png';
-import whitening from '../../assets/images/whitening.png';
 import img1 from '../../assets/images/img1.jpg';
+import img2 from '../../assets/images/img2.png';
+import img3 from '../../assets/images/img3.jpg';
+import img4 from '../../assets/images/img4.jpg';
+import img5 from '../../assets/images/img5.jpg';
+import img6 from '../../assets/images/img6.jpg';
 
 import Service from './Service';
 const Services = () => {
@@ -11,37 +13,37 @@ const Services = () => {
             _id: 1,
             name: "Gaming ",
             description: ``,
-            img: fluoride
+            img: img1
         },
         {
             _id: 2,
             name: "Gaming ",
             description: ``,
-            img: cavity
+            img: img2
         },
         {
             _id: 3,
             name: "Gaming ",
             description: ``,
-            img: cavity
+            img: img3
         },
         {
             _id: 4,
             name: "Gaming ",
             description: ``,
-            img: img1
+            img: img4
         },
         {
             _id: 5,
             name: "Gaming ",
             description: ``,
-            img: cavity
+            img: img5
         },
         {
             _id: 6,
             name: "Gaming ",
             description: ``,
-            img: whitening
+            img: img6
         }
 
     ];
