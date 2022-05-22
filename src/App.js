@@ -7,6 +7,9 @@ import Login from './Pages/Login/Login';
 import Blogs from './Pages/Blogs/Blogs';
 import Contract from './Pages/Contract/Contract';
 import Popular from './Pages/Home/Popular';
+import Business from './Pages/Home/Business';
+import Order from './Pages/Order/Order';
+
 
 
 function App() {
@@ -18,7 +21,9 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="blogs" element={<Blogs />} />
         <Route path="popular" element={<Popular />} />
-        <Route path="contract" element={<Contract/>} />
+        <Route path="order" element={<Order />} />
+        <Route path="business" element={<Business />} />
+        <Route path="contract" element={<Contract />} />
         <Route path="login" element={<Login />} />
       </Routes>
     </div>
