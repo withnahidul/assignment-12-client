@@ -1,5 +1,6 @@
 import React from 'react';
 import banner1 from '../../assets/images/banner1.jpg';
+import MainButton from '../Shared/MainButton';
 
 const Banner = () => {
     return (
@@ -9,7 +10,7 @@ const Banner = () => {
                 <div>
                     <h1 class="text-5xl font-bold">Best Quality products</h1>
                     <p class="py-6">From personal computer hardware to business server solutions, renowned for quality and innovation, GIGABYTE is the very choice for PC users and business partners.</p>
-                    <button class="btn btn-primary uppercase text-white font-bold bg-gradient-to-r from-secondary to-primary">Get Started</button>
+                    <MainButton>Get Started</MainButton>
                 </div>
             </div>
         </div>
