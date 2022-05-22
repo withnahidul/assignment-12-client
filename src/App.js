@@ -6,16 +6,18 @@ import About from './Pages/About/About';
 import Login from './Pages/Login/Login';
 import Blogs from './Pages/Blogs/Blogs';
 import Contract from './Pages/Contract/Contract';
+import Popular from './Pages/Home/Popular';
 
 
 function App() {
   return (
-    <div className="">
+    <div className=" max-w-7xl mx-auto">
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="blogs" element={<Blogs />} />
+        <Route path="popular" element={<Popular />} />
         <Route path="contract" element={<Contract/>} />
         <Route path="login" element={<Login />} />
       </Routes>
