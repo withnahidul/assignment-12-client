@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import footer from '../../assets/images/footer.png';
-import { DayPicker } from 'react-day-picker';
-import 'react-day-picker/dist/style.css';
-import { format } from 'date-fns';
+
 
 const Footer = () => {
-    const [date, setDate] = useState(new Date());
     return (
         <footer style={{
             background: `url(${footer})`,
@@ -31,14 +28,6 @@ const Footer = () => {
                     <a className="link link-hover">Terms of use</a>
                     <a className="link link-hover">Privacy policy</a>
                     <a className="link link-hover">Cookie policy</a>
-                </div>
-                <div>
-                    <DayPicker
-                        mode="single"
-                        selected={date}
-                        onSelect={setDate}
-                    />
-                    <p>You have selected: {format(date, 'PP')}</p>
                 </div>
             </div>
             <div className='my-10 text-center'>
