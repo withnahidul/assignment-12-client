@@ -1,5 +1,5 @@
-# Quanta Computer Manufacturing Inc
-Live site: 
+# Quanta Computer Manufacturing Ltd.
+Live site: https://nis-computer-manufactorer.web.app/ 
 
 * This project is based on a manufacturing website which expands with the end users to buy products from remotely. This is only for the wholesaler who purchase a minimum number of products.
 
