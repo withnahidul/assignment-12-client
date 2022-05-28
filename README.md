@@ -1,54 +1,45 @@
-# Nis Computer Manufacturer 
+# Quanta Computer Manufacturing Inc
+Live site: 
 
+* This project is based on a manufacturing website which expands with the end users to buy products from remotely. This is only for the wholesaler who purchase a minimum number of products.
 
+* Product Features
+    * Home page
+    * Banner
+    * Navbar
+    * Products
+    * Business Summary
+    * Order App
+    * Customer Review
+    * Contact Form
+    * Footer
 
-## Live site Link:
-
-
-
-### `npm start`
-
-
-
-### `npm test`
-
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `About site:`
-
-**Note: This is a nice projects.. Once you `eject`, you can't go back!**
-
-
-
-## Descriptions:
-
-
-
-### Code Splitting
-
-
-### Analyzing the Bundle Size
-
-
-
-### Making a Progressive Web App
-
-
-### Advanced Configuration
-
-
-### Deployment
-
-
-
-
+* Product Details Features
+    * Language Used Front-End
+        * React
+        * React-query
+        * React Tailwind
+        * React-hook-form
+        * React Toast
+        * etc.
+    * Language Used Back-End
+        * MongoDB
+        * Deployed to heroku
+    * Feature Details:
+        * Firebase Deploy of frontend and backend to MongoDb and Heroku
+        * User Login:
+            * Has to get a token
+            * Unauthorised access denied
+            * Admin can make another admin
+            * Social Login
+        * Working Features:
+            * Admin can add product delete product and cancel payment but can not add review
+            * Admin can make another admin
+            * Admin can create his/ her profile and edit it.
+            * user can make a review
+            * user can cancel a payment
+            * user can pay his / her product using stripe card
+            * card method added using stripe
+            * Paid status if paid
+            * etc.
 

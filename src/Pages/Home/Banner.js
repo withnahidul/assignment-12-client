@@ -1,19 +1,21 @@
 import React from 'react';
-import banner1 from '../../assets/images/banner1.jpg';
-import MainButton from '../Shared/MainButton';
+import PrimaryButton from '../Shared/PrimaryButton';
 
 const Banner = () => {
     return (
-        <div className="hero min-h-screen ">
+
+        <div className='my-28'>
             <div className="hero-content flex-col lg:flex-row">
-                <img src={banner1} className="max-w-sm rounded-lg shadow-2xl" />
+                <img src="https://i.ibb.co/Twm7LS2/12.png" className="md:max-w-xl rounded-lg" alt="" />
                 <div>
-                    <h1 className="text-5xl font-bold">Best Quality products</h1>
-                    <p className="py-6">From personal computer hardware to business server solutions, renowned for quality and innovation, GIGABYTE is the very choice for PC users and business partners.</p>
-                    <MainButton>Get Started</MainButton>
+                    <h1 className="md:text-5xl text-2xl font-bold">Quanta Computer Manufacturing Ltd.</h1>
+                    <p className="py-6 md:text-xl text-lg">Top computer manufacturing in Asia..<br /></p>
+                    <p className='text-accent font-semibold py-3'>We serve the best for customer needs. Explore to grow your Business Today.</p>
+                    <PrimaryButton>Explore</PrimaryButton>
                 </div>
             </div>
         </div>
+
     );
 };
 

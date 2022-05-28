@@ -1,26 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from './Banner';
-import Footer from '../Shared/Footer';
-import Info from './Info';
-import MakeBusiness from './MakeBusiness';
-import Services from './Services';
-import Testimonials from './Testimonials';
-
-
-
-
-
+import Contact from './Contact';
+import AvailableOrders from '../BookingOrders/AvailableOrders';
+import BusinessSummary from './BusinessSummary';
+import PhoneMockup from './PhoneMockup';
+import ClientReview from './ClientReview';
 
 const Home = () => {
+    const [date, setDate] = useState(new Date());
     return (
-        <div className='my-28 px-12'>
-            <Banner></Banner>
-            <Info ></Info>
-            <Services></Services>
-            <MakeBusiness></MakeBusiness>
-            <Testimonials></Testimonials>
-            <Footer></Footer>
-
+        <div>
+            <Banner />
+            <AvailableOrders date={date}/>
+            <BusinessSummary />
+            <ClientReview />
+            <PhoneMockup />
+            <Contact />
+            
         </div>
     );
 };
