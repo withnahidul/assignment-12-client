@@ -18,7 +18,7 @@ const MyOrders = ({ refetch, name }) => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?bookingMail=${user.email}`, {
+            fetch(`https://infinite-savannah-93709.herokuapp.com/booking?bookingMail=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -43,21 +43,21 @@ const MyOrders = ({ refetch, name }) => {
 
 
     const handleDelete = () => {
-        
-            fetch(`http://localhost:5000/booking?bookingMail=${delBooking.email}`, {
-                method: 'DELETE',
-                headers: {
-                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-                }
-            })
-                .then(res => res.json())
-                .then(data => {
 
-                    setDelBooking(data);
-                    refetch();
-                });
+        fetch(`https://infinite-savannah-93709.herokuapp.com/booking?bookingMail=${delBooking.email}`, {
+            method: 'DELETE',
+            headers: {
+                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
 
-        }
+                setDelBooking(data);
+                refetch();
+            });
+
+    }
 
     if (loading) {
         <Loading />
@@ -122,7 +122,7 @@ const MyOrders = ({ refetch, name }) => {
             <div class="modal">
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">Are you sure you want to delete!</h3>
-                    
+
                     <div class="modal-action">
                         <label onClick={() => handleDelete()} for="delete-booking-modal" class="btn btn-xs btn-error">Delete</label>
                         <label htmlFor="delete-booking-modal" className="btn btn-xs">Discard</label>

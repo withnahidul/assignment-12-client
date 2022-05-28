@@ -9,10 +9,10 @@ const AvailableOrders = () => {
     const [product, setProduct] = useState(null);
 
     const formattedDate = format(new Date, 'PP');
-    const { data: services, isLoading } = useQuery(['available', formattedDate], () => fetch(`http://localhost:5000/available`)
+    const { data: services, isLoading } = useQuery(['available', formattedDate], () => fetch(`https://infinite-savannah-93709.herokuapp.com/available`)
         .then(res => res.json()))
 
-    if(isLoading){
+    if (isLoading) {
         return <Loading></Loading>
     }
 
@@ -31,7 +31,7 @@ const AvailableOrders = () => {
             {product && <BookingModal
                 product={product}
                 setProduct={setProduct}
-                
+
             ></BookingModal>}
         </div>
     );

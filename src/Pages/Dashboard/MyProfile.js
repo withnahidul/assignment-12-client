@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const MyProfile = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: profile, isLoading } = useQuery('profile', () => fetch('http://localhost:5000/profile').then(res => res.json()))
+    const { data: profile, isLoading } = useQuery('profile', () => fetch('https://infinite-savannah-93709.herokuapp.com/profile').then(res => res.json()))
 
     const imageStorageKey = '4b8c22321a3b019a0973cce1fc21308e';
 
@@ -30,7 +30,7 @@ const MyProfile = () => {
                         img: img
                     }
                     // send to your database 
-                    fetch('http://localhost:5000/profile', {
+                    fetch('https://infinite-savannah-93709.herokuapp.com/profile', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
@@ -103,7 +103,7 @@ const MyProfile = () => {
                     </label>
                 </div>
 
-               
+
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
                         <span className="label-text">Upload Photo</span>

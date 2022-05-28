@@ -42,7 +42,7 @@ const BookingPurchase = ({ service, setProduct }) => {
             phone
         };
 
-        const url = `http://localhost:5000/booking/`;
+        const url = `https://infinite-savannah-93709.herokuapp.com/booking/`;
         fetch(url, {
             method: 'POST',
             headers: {

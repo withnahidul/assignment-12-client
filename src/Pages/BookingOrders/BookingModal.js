@@ -35,7 +35,7 @@ const BookingModal = ({ product, setProduct }) => {
         };
 
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://infinite-savannah-93709.herokuapp.com/booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

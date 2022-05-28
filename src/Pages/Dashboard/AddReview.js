@@ -8,18 +8,18 @@ const AddReview = () => {
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    const { data: services, isLoading } = useQuery('services', () => fetch('http://localhost:5000/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://infinite-savannah-93709.herokuapp.com/service').then(res => res.json()))
 
 
     const onSubmit = async data => {
-       
+
         const makeReview = {
             ratings: data.ratings,
             product: data.product,
             description: data.description
         }
         // send to your database 
-        fetch('http://localhost:5000/review', {
+        fetch('https://infinite-savannah-93709.herokuapp.com/review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -74,7 +74,7 @@ const AddReview = () => {
                         placeholder="Enter Ratings"
                         className="range range-primary"
                         min="1" max="5"
-                        {...register("ratings",{
+                        {...register("ratings", {
                             required: {
                                 value: true,
                                 message: 'Ratings is Required'

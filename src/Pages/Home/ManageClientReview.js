@@ -6,8 +6,8 @@ const ManageClientReview = () => {
 
     const [deleteReview, setDeleteReview] = useState(null);
 
-    const { data: reviews, isLoading, refetch } = useQuery('review', () => fetch('http://localhost:5000/review', {
-       
+    const { data: reviews, isLoading, refetch } = useQuery('review', () => fetch('https://infinite-savannah-93709.herokuapp.com/review', {
+
     }).then(res => res.json()));
 
     if (isLoading) {

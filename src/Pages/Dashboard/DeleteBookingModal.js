@@ -5,7 +5,7 @@ const DeleteBookingModal = ({ deleteBooking, setDeleteBooking, refetch }) => {
     const { id, name } = deleteBooking;
 
     const handleDelete = () => {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://infinite-savannah-93709.herokuapp.com/booking/${id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -7,7 +7,7 @@ import ManageReview from './ManageReview';
 const ManageProduct = () => {
     const [deleteReview, setDeleteReview] = useState(null);
 
-    const { data: reviews, isLoading, refetch } = useQuery('review', () => fetch('http://localhost:5000/review', {
+    const { data: reviews, isLoading, refetch } = useQuery('review', () => fetch('https://infinite-savannah-93709.herokuapp.com/review', {
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
